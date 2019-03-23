@@ -9,7 +9,6 @@
  </parent>
  <groupId>com.ymmihw.spring.amqp</groupId>
  <artifactId>spring-amqp-messaging</artifactId>
- <version>0.0.1-SNAPSHOT</version>
  <name>spring-amqp-messaging</name>
  <url>http://maven.apache.org</url>
  <properties>
