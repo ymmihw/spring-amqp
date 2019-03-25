@@ -7,12 +7,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties("destinations")
 public class DestinationsConfig {
 
-
   private Map<String, DestinationInfo> queues = new HashMap<>();
 
   private Map<String, DestinationInfo> topics = new HashMap<>();
-
-
 
   public Map<String, DestinationInfo> getQueues() {
     return queues;
@@ -53,8 +50,6 @@ public class DestinationsConfig {
     public void setRoutingKey(String routingKey) {
       this.routingKey = routingKey;
     }
-
-
 
   }
 
