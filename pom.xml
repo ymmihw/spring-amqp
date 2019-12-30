@@ -54,5 +54,6 @@
   <module>spring-amqp-messaging</module>
   <module>spring-amqp-reactive</module>
   <module>rabbitmq-container</module>
+  <module>spring-amqp-error-handling</module>
  </modules>
 </project>
