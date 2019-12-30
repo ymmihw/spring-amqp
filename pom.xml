@@ -32,6 +32,15 @@
    <scope>test</scope>
   </dependency>
  </dependencies>
+ <dependencyManagement>
+  <dependencies>
+   <dependency>
+    <groupId>org.testcontainers</groupId>
+    <artifactId>rabbitmq</artifactId>
+    <version>1.12.4</version>
+   </dependency>
+  </dependencies>
+ </dependencyManagement>
  <build>
   <plugins>
    <plugin>
@@ -44,5 +53,6 @@
   <module>spring-amqp-dispatching</module>
   <module>spring-amqp-messaging</module>
   <module>spring-amqp-reactive</module>
+  <module>rabbitmq-container</module>
  </modules>
 </project>
