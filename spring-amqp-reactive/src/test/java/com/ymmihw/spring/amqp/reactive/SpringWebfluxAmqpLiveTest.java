@@ -26,7 +26,7 @@ public class SpringWebfluxAmqpLiveTest {
 
     WebTestClient client = WebTestClient.bindToServer().baseUrl("http://localhost:" + port).build();
 
-    client.post().uri("/queue/NYSE").syncBody("Test Message").exchange().expectStatus()
+    client.post().uri("/queue/NYSE").bodyValue("Test Message").exchange().expectStatus()
         .isAccepted();
 
   }
